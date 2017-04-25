@@ -1,6 +1,6 @@
 # npmtest-path-match
 
-#### basic test coverage for  path-match (v1.2.4)  [![npm package](https://img.shields.io/npm/v/npmtest-path-match.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-path-match) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-path-match.svg)](https://travis-ci.org/npmtest/node-npmtest-path-match)
+#### basic test coverage for  [path-match (v1.2.4)](https://github.com/pillarjs/path-match#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-path-match.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-path-match) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-path-match.svg)](https://travis-ci.org/npmtest/node-npmtest-path-match)
 
 #### wrapper around path-to-regexp for easy route parameters
 
@@ -10,7 +10,7 @@
 |--:|:--|
 | coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-path-match/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-path-match/build/coverage.html/index.html)|
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-path-match/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-path-match/build/test-report.html)|
-| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-path-match/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-path-match/tree/gh-pages/build)|
+| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-path-match/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-path-match/build/app/index.html) | | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-path-match/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-path-match/tree/gh-pages/build)|
 
 - [https://npmtest.github.io/node-npmtest-path-match/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-path-match/build/coverage.html/index.html)
 
@@ -35,14 +35,32 @@
 ```json
 
 {
-    "name": "path-match",
-    "description": "wrapper around path-to-regexp for easy route parameters",
-    "version": "1.2.4",
     "author": {
         "name": "Jonathan Ong",
-        "url": "http://jongleberry.com",
-        "twitter": "https://twitter.com/jongleberry"
+        "url": "http://jongleberry.com"
     },
+    "bugs": {
+        "url": "https://github.com/pillarjs/path-match/issues"
+    },
+    "dependencies": {
+        "http-errors": "~1.4.0",
+        "path-to-regexp": "^1.0.0"
+    },
+    "description": "wrapper around path-to-regexp for easy route parameters",
+    "devDependencies": {
+        "istanbul": "^0.4.2",
+        "mocha": "^2.0.0"
+    },
+    "directories": {},
+    "dist": {
+        "shasum": "a62747f3c7e0c2514762697f24443585b09100ea",
+        "tarball": "https://registry.npmjs.org/path-match/-/path-match-1.2.4.tgz"
+    },
+    "files": [
+        "index.js"
+    ],
+    "gitHead": "f461d324572404943fbde1562dddee6e03fe383c",
+    "homepage": "https://github.com/pillarjs/path-match#readme",
     "keywords": [
         "route",
         "router",
@@ -54,23 +72,36 @@
         "params"
     ],
     "license": "MIT",
-    "repository": "pillarjs/path-match",
-    "dependencies": {
-        "http-errors": "~1.4.0",
-        "path-to-regexp": "^1.0.0"
-    },
-    "devDependencies": {
-        "istanbul": "^0.4.2",
-        "mocha": "^2.0.0"
+    "maintainers": [
+        {
+            "name": "jongleberry"
+        },
+        {
+            "name": "mscdex"
+        },
+        {
+            "name": "dougwilson"
+        },
+        {
+            "name": "fishrock123"
+        },
+        {
+            "name": "defunctzombie"
+        }
+    ],
+    "name": "path-match",
+    "optionalDependencies": {},
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/pillarjs/path-match.git"
     },
     "scripts": {
         "test": "mocha --reporter spec",
         "test-cov": "istanbul cover node_modules/mocha/bin/_mocha -- --reporter dot",
         "test-travis": "istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --reporter dot"
     },
-    "files": [
-        "index.js"
-    ]
+    "version": "1.2.4",
+    "bin": {}
 }
 ```
 
